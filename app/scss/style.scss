@@ -9,7 +9,61 @@ html{
    margin: 0;
    padding: 0;
  }
+.header{
+    background-color:#171819;
+    a{  
+        color: #fff;
+        transition: all .5s;
+        &:hover{
+            color: red;
+        }
+        
+    }
+    .header__inner{
+        height:80px ;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__social{
+        display: flex;
+        justify-content: space-between;
+        
+        &-item{
 
+            display: inline-block;
+            & + &{
+                margin-left: 20px;
+            }
+            a{
+                transition: all .5s;
+                &:hover{
+                    svg{
+                        fill: red;
+                        
+                    }
+                }
+            }
+        }
+        &-link{
+            svg{
+                transition: all .5s;
+                fill: #FFF;
+            }
+        }
+    }
+}
+.menu{
+    display: flex;
+    li{
+        font-size: 14px;
+        text-transform: uppercase;
+        display: inline-block;
+        & + li {
+            margin-left:60px ;
+        }
+    }
+}
 
 
 
