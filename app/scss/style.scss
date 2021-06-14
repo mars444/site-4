@@ -9,8 +9,17 @@ html{
    margin: 0;
    padding: 0;
  }
+ body{
+     a{
+         color: black;
+     }
+ }
+
+
+ //header start
 .header{
-    background-color:#171819;
+  
+    background-color: #171819;
     a{  
         color: #fff;
         transition: all .5s;
@@ -20,7 +29,8 @@ html{
         
     }
     .header__inner{
-        height:80px ;
+        
+        height:60px ;
         align-items: center;
         display: flex;
         justify-content: space-between;
@@ -54,7 +64,9 @@ html{
     }
 }
 .menu{
+    margin-left: auto;
     display: flex;
+    margin-right: 60px;
     li{
         font-size: 14px;
         text-transform: uppercase;
@@ -63,6 +75,56 @@ html{
             margin-left:60px ;
         }
     }
+}
+//header end
+
+
+//section upgrade start
+.upgrade{
+    text-align: center;
+   padding-top: 220px;
+   padding-bottom: 250px;
+    &__inner{
+        opacity: 1 !important;
+    }
+    &__small-title{
+        color:#909090 ;
+    }
+    &__title{
+        color: #fff;
+        padding-bottom: 50px;
+        padding-top: 50px;
+       max-width: 750px;
+       margin: 0 auto;
+        font-size: 50px;
+        line-height: 70px;
+    }
+    &__button-odd{
+        color: #fff;
+        transition: all .5s;
+        &:hover{
+            color: red;
+        }  
+    }
+    &__button-even{
+        color: red;
+        transition: all .5s;
+        padding: 10px;
+        border: 1px solid red;
+        &:hover{
+            border-color: #fff;
+            background-color: #fff;
+        }
+    }
+    a{
+        font-size: 20px;
+        line-height: 25px;
+        & + a {
+            margin-left: 50px;
+            
+        }
+    }
+   
 }
 
 
