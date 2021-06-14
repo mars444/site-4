@@ -205,6 +205,111 @@ html{
 
 
 //start hello section
+.hello{
+    background-color: #F9F9F9;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 150px 0;
+        
+    }
+    &__description{
+        padding-right: 20px;
+        max-width: 680px;
+        padding-left: 35px;
+        font-size: 18px;
+        line-height: 24px;
+        &-title{
+            color: #323232;
+            font-size: 35px;
+            line-height: 40px;
+
+        }
+        &-text{
+            padding-top: 60px;
+            padding-bottom: 40px;
+            color: #666262;
+        }
+        &-bot{
+           
+            color: #666262;
+            span{
+                display: inline-flex;
+                color: #323232;
+                a{
+                    transition: all .5s;
+                    &:hover{
+                        color: $redd;
+                    }
+                }
+               
+            }
+        }
+    }
+    &__trainers{
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        &-box{
+          border-radius: 10px;
+            margin-left: 50px;
+            background-color: #fff;
+            width: 300px;
+            height: 400px;
+        }
+        &-div{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            overflow: hidden;
+            
+            width: 300px;
+            height: 300px;
+            &-img{
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                width: 300px;
+                height: 300px;
+                transition: all .5s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        
+        &-name{
+            font-size: 20px;
+        }
+        &-type{
+            font-size: 14px;
+            display: block;
+            color: grey;
+            padding-top: 5px;
+        }
+        &__bot{
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &__social{
+                svg{
+                    transition: all .5s;
+                    fill: grey;
+                    &:hover{
+                        fill: $redd;
+                    }
+                }
+                li{
+                    text-align: center;
+                    display: block;
+                }
+               
+            }
+        }
+    }
+
+}
+
 
 
 
