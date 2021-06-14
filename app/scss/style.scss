@@ -24,7 +24,7 @@ html{
         color: #fff;
         transition: all .5s;
         &:hover{
-            color: red;
+            color: $redd;
         }
         
     }
@@ -49,7 +49,7 @@ html{
                 transition: all .5s;
                 &:hover{
                     svg{
-                        fill: red;
+                        fill: $redd;
                         
                     }
                 }
@@ -103,14 +103,14 @@ html{
         color: #fff;
         transition: all .5s;
         &:hover{
-            color: red;
+            color: $redd;
         }  
     }
     &__button-even{
-        color: red;
+        color: $redd;
         transition: all .5s;
         padding: 10px;
-        border: 1px solid red;
+        border: 1px solid $redd;
         &:hover{
             border-color: #fff;
             background-color: #fff;
@@ -126,6 +126,87 @@ html{
     }
    
 }
+// end upgrade section
+
+//start newto section
+.newto{
+    background-color:#171819 ;
+    color: #fff;
+    &__inner{
+        display: flex;
+        justify-content: center;
+        
+    }
+    &-title{
+        text-align: left;
+        font-size: 35px;
+        line-height: 40px;
+        span{
+            text-align: justify;
+            padding-top: 20px;
+            padding-bottom: 35px;
+            display: block;
+            font-size: 20px;
+            line-height: 26px;
+            
+        }
+    }
+    &__left{
+        text-align: center;
+        margin-top: 120px;
+        margin-bottom: 100px;
+        max-width: 660px;
+        border-right: 1px solid #909090 ;
+        padding-right: 100px;
+        &-text{
+            text-align: justify;
+            font-size: 18px;
+            line-height: 30px;
+            color: #909090;
+        }
+        &-link{
+            display: block;
+            margin-top: 30px;
+            font-size: 18px;
+            line-height: 30px;
+            color: #fff;
+            padding: 10px;
+            background-color:$redd;
+            transition: all.5s;
+            &:hover{
+                color: $redd;
+                background-color: #fff;
+               
+            }
+        }
+
+    }
+    &__right{
+        padding-top: 140px;
+        padding-left: 60px;
+        &-days{
+            padding-top: 20px;
+            li{
+                font-size: 18px;
+                line-height: 25px;
+                & + li{
+                    padding-top: 15px;
+                }
+                span{
+                    display: block;
+                    color: #909090;
+                }
+            }
+        }
+    }
+   
+}
+// end newto section
+
+
+//start hello section
+
+
 
 
 
