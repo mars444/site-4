@@ -404,7 +404,88 @@ html{
 //end our section
 
 
-//
+//start timetable section
+.timetable{
+    color: white;
+    text-align: center;
+    background-color:#171819 ;
+    padding: 100px 0;
+    li{
+       display: flex;
+       align-items: center;
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+    &-subtitle{
+        font-size: 20px;
+        line-height: 28px;
+        color: #323232;
+    }
+    &-title{
+        padding-top: 30px;
+        padding-bottom: 70px;
+        font-size: 30px;
+        line-height: 38px;
+        
+    }
+    &__box{
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        &-red-item{
+            height: 50px !important;
+        }
+        &-time{
+            
+           li{
+            width: 125px;
+            height: 75px;
+            background-color: $redd;
+            & + li{
+                border-top: 2px solid #323232;
+            }
+           
+           }
+        }
+        &-day{
+            li:nth-child(1){
+                font-weight: 500;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                border-left: 2px solid #323232;
+                background-color: $redd;
+            }
+            li{
+                max-width: 205px;
+                padding: 5px;
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 700;
+                border-left: 2px solid #323232;
+                height: 75px;
+                background-color: #171819;
+                transition: all .5s;
+                & + li{
+                    border-top: 2px solid #323232;
+                }
+                &:hover{
+                    background-color: $redd;
+                }
+                span{
+                    font-size: 14px;
+                    color: #666262;
+                display: block;
+                }
+
+            }
+        }
+    }
+}
+//end timetable section
+
+
 
 
 
