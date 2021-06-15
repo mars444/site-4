@@ -557,7 +557,7 @@ html{
         outline: none;
         overflow: hidden;
         border-radius: 10px;
-        width: 400px;
+        width: 420px;
         height: 300px;
      
     }
@@ -568,8 +568,41 @@ html{
 }
 //end section feedback
 
+//start footer
+.footer{
+    border-top: 1px solid #F2F2F2;
+    &-inner{
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 100px;
+    }
+    &-designer{
+      
+        span{
+            padding-top: 5px;
+            display: block;
+        }
+    }
+    &-contact{
+        display: flex;
+        svg{
+           transform: scale(0.9);
+            fill:$redd;
+            margin-right: 10px;
+        }
+        a{
+            display: flex;
+            align-items: center;
 
-
+        }
+        a + a{
+            margin-left: 50px;
+        }
+    }
+}
+//end footer
 
    
 
