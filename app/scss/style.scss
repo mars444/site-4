@@ -486,6 +486,88 @@ html{
 //end timetable section
 
 
+//start section feedback
+.feedback{
+    &-inner{
+        display: flex;
+        justify-content: space-between;
+        padding: 150px 70px;
+    }
+    &__box{
+        &-title{
+            padding-bottom: 30px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 38px;
+        }
+    }
+    &__form{
+       
+        input{
+            border-radius: 10px;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+            margin-bottom: 20px;
+            border: 1px solid #909090;
+            outline: none;
+            height: 70px;
+            padding: 10px;
+            width: 100%;
+            display: block;
+            font-size: 16px;
+            color: #666262;
+        }
+        textarea{
+            border-radius: 10px;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+            height: 80px;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #909090;
+            resize: none;
+            text-align: left;
+            font-size: 16px;
+            color: #666262;
+            outline: none;
+            margin-bottom: 20px;
+        }
+    }
+    &-button{
+        border-radius: 10px;
+        height: 70px;
+        display: block;
+        background-color:#171819 ;
+        width: 100%;
+        transition: all .5s;
+        cursor: pointer;
+        &:hover{
+            background-color: $redd;
+           
+        }
+    }
+    &__address{
+       
+        font-size: 16px;
+        line-height: 20px;
+        color: #666262;
+        padding-bottom: 20px;
+        
+    }
+    &-map{
+        outline: none;
+        overflow: hidden;
+        border-radius: 10px;
+        width: 400px;
+        height: 300px;
+     
+    }
+    iframe{
+        border: none;
+    }
+   
+}
+//end section feedback
+
 
 
 
