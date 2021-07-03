@@ -1,96 +1,119 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <script type="text/javascript" src="js/jquery.circliful.min.js"></script>
+
+
 </head>
+
 <body>
 
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <div class="logo">
-                  <a href="#" class="logo-link">
-                      <img style="height:100px;" src="images/header/logo.png" alt="" class="logo-img"> Fitness
-                  </a>
+                <div class="header-logo">
+                    <a href="#" class="header-logo-link">
+                        <img src="images/logo.png" alt="" class="logo-img">Fitness
+                    </a>
                 </div>
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__list-item">
-                            <a href="#" class="menu__list-link">
-                                 Home
-                            </a>  
+                            <a href="#home" class="menu__list-item-link">
+                                Home
+                            </a>
                         </li>
                         <li class="menu__list-item">
-                            <a href="#" class="menu__list-link">
-                                 About us
-                            </a>  
+                            <a href="#about" class="menu__list-item-link">
+                                About us
+                            </a>
                         </li>
                         <li class="menu__list-item">
-                            <a href="#" class="menu__list-link">
-                                 classes
-                            </a>  
+                            <a href="#classes" class="menu__list-item-link">
+                                classes
+                            </a>
                         </li>
                         <li class="menu__list-item">
-                            <a href="#" class="menu__list-link">
-                                 shedules
-                            </a>  
+                            <a href="#shedules" class="menu__list-item-link">
+                                shedules
+                            </a>
                         </li>
                         <li class="menu__list-item">
-                            <a href="#" class="menu__list-link">
-                                 contact
-                            </a>  
+                            <a href="#contact" class="menu__list-item-link">
+                                contact
+                            </a>
                         </li>
                     </ul>
                 </nav>
+                <div class="menu-burger-icon">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <title>menu</title>
+                        <path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+                    </svg>
+                </div>
                 <ul class="header__social">
                     <li class="header__social-item">
                         <a href="#" class="header__social-link vk">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="31" height="28" viewBox="0 0 31 28">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="31" height="28"
+                                viewBox="0 0 31 28">
                                 <title>vk</title>
-                                <path d="M29.953 8.125c0.234 0.641-0.5 2.141-2.344 4.594-3.031 4.031-3.359 3.656-0.859 5.984 2.406 2.234 2.906 3.313 2.984 3.453 0 0 1 1.75-1.109 1.766l-4 0.063c-0.859 0.172-2-0.609-2-0.609-1.5-1.031-2.906-3.703-4-3.359 0 0-1.125 0.359-1.094 2.766 0.016 0.516-0.234 0.797-0.234 0.797s-0.281 0.297-0.828 0.344h-1.797c-3.953 0.25-7.438-3.391-7.438-3.391s-3.813-3.938-7.156-11.797c-0.219-0.516 0.016-0.766 0.016-0.766s0.234-0.297 0.891-0.297l4.281-0.031c0.406 0.063 0.688 0.281 0.688 0.281s0.25 0.172 0.375 0.5c0.703 1.75 1.609 3.344 1.609 3.344 1.563 3.219 2.625 3.766 3.234 3.437 0 0 0.797-0.484 0.625-4.375-0.063-1.406-0.453-2.047-0.453-2.047-0.359-0.484-1.031-0.625-1.328-0.672-0.234-0.031 0.156-0.594 0.672-0.844 0.766-0.375 2.125-0.391 3.734-0.375 1.266 0.016 1.625 0.094 2.109 0.203 1.484 0.359 0.984 1.734 0.984 5.047 0 1.062-0.203 2.547 0.562 3.031 0.328 0.219 1.141 0.031 3.141-3.375 0 0 0.938-1.625 1.672-3.516 0.125-0.344 0.391-0.484 0.391-0.484s0.25-0.141 0.594-0.094l4.5-0.031c1.359-0.172 1.578 0.453 1.578 0.453z"></path>
-                                </svg>
-                                
+                                <path
+                                    d="M29.953 8.125c0.234 0.641-0.5 2.141-2.344 4.594-3.031 4.031-3.359 3.656-0.859 5.984 2.406 2.234 2.906 3.313 2.984 3.453 0 0 1 1.75-1.109 1.766l-4 0.063c-0.859 0.172-2-0.609-2-0.609-1.5-1.031-2.906-3.703-4-3.359 0 0-1.125 0.359-1.094 2.766 0.016 0.516-0.234 0.797-0.234 0.797s-0.281 0.297-0.828 0.344h-1.797c-3.953 0.25-7.438-3.391-7.438-3.391s-3.813-3.938-7.156-11.797c-0.219-0.516 0.016-0.766 0.016-0.766s0.234-0.297 0.891-0.297l4.281-0.031c0.406 0.063 0.688 0.281 0.688 0.281s0.25 0.172 0.375 0.5c0.703 1.75 1.609 3.344 1.609 3.344 1.563 3.219 2.625 3.766 3.234 3.437 0 0 0.797-0.484 0.625-4.375-0.063-1.406-0.453-2.047-0.453-2.047-0.359-0.484-1.031-0.625-1.328-0.672-0.234-0.031 0.156-0.594 0.672-0.844 0.766-0.375 2.125-0.391 3.734-0.375 1.266 0.016 1.625 0.094 2.109 0.203 1.484 0.359 0.984 1.734 0.984 5.047 0 1.062-0.203 2.547 0.562 3.031 0.328 0.219 1.141 0.031 3.141-3.375 0 0 0.938-1.625 1.672-3.516 0.125-0.344 0.391-0.484 0.391-0.484s0.25-0.141 0.594-0.094l4.5-0.031c1.359-0.172 1.578 0.453 1.578 0.453z">
+                                </path>
+                            </svg>
+
                         </a>
                     </li>
                     <li class="header__social-item">
                         <a href="#" class="header__social-link twitter">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="28" viewBox="0 0 26 28">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="28"
+                                viewBox="0 0 26 28">
                                 <title>twitter</title>
-                                <path d="M25.312 6.375c-0.688 1-1.547 1.891-2.531 2.609 0.016 0.219 0.016 0.438 0.016 0.656 0 6.672-5.078 14.359-14.359 14.359-2.859 0-5.516-0.828-7.75-2.266 0.406 0.047 0.797 0.063 1.219 0.063 2.359 0 4.531-0.797 6.266-2.156-2.219-0.047-4.078-1.5-4.719-3.5 0.313 0.047 0.625 0.078 0.953 0.078 0.453 0 0.906-0.063 1.328-0.172-2.312-0.469-4.047-2.5-4.047-4.953v-0.063c0.672 0.375 1.453 0.609 2.281 0.641-1.359-0.906-2.25-2.453-2.25-4.203 0-0.938 0.25-1.797 0.688-2.547 2.484 3.062 6.219 5.063 10.406 5.281-0.078-0.375-0.125-0.766-0.125-1.156 0-2.781 2.25-5.047 5.047-5.047 1.453 0 2.766 0.609 3.687 1.594 1.141-0.219 2.234-0.641 3.203-1.219-0.375 1.172-1.172 2.156-2.219 2.781 1.016-0.109 2-0.391 2.906-0.781z"></path>
-                                </svg>
+                                <path
+                                    d="M25.312 6.375c-0.688 1-1.547 1.891-2.531 2.609 0.016 0.219 0.016 0.438 0.016 0.656 0 6.672-5.078 14.359-14.359 14.359-2.859 0-5.516-0.828-7.75-2.266 0.406 0.047 0.797 0.063 1.219 0.063 2.359 0 4.531-0.797 6.266-2.156-2.219-0.047-4.078-1.5-4.719-3.5 0.313 0.047 0.625 0.078 0.953 0.078 0.453 0 0.906-0.063 1.328-0.172-2.312-0.469-4.047-2.5-4.047-4.953v-0.063c0.672 0.375 1.453 0.609 2.281 0.641-1.359-0.906-2.25-2.453-2.25-4.203 0-0.938 0.25-1.797 0.688-2.547 2.484 3.062 6.219 5.063 10.406 5.281-0.078-0.375-0.125-0.766-0.125-1.156 0-2.781 2.25-5.047 5.047-5.047 1.453 0 2.766 0.609 3.687 1.594 1.141-0.219 2.234-0.641 3.203-1.219-0.375 1.172-1.172 2.156-2.219 2.781 1.016-0.109 2-0.391 2.906-0.781z">
+                                </path>
+                            </svg>
                         </a>
                     </li>
                     <li class="header__social-item">
                         <a href="#" class="header__social-link instagram">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="28"
+                                viewBox="0 0 24 28">
                                 <title>instagram</title>
-                                <path d="M16 14c0-2.203-1.797-4-4-4s-4 1.797-4 4 1.797 4 4 4 4-1.797 4-4zM18.156 14c0 3.406-2.75 6.156-6.156 6.156s-6.156-2.75-6.156-6.156 2.75-6.156 6.156-6.156 6.156 2.75 6.156 6.156zM19.844 7.594c0 0.797-0.641 1.437-1.437 1.437s-1.437-0.641-1.437-1.437 0.641-1.437 1.437-1.437 1.437 0.641 1.437 1.437zM12 4.156c-1.75 0-5.5-0.141-7.078 0.484-0.547 0.219-0.953 0.484-1.375 0.906s-0.688 0.828-0.906 1.375c-0.625 1.578-0.484 5.328-0.484 7.078s-0.141 5.5 0.484 7.078c0.219 0.547 0.484 0.953 0.906 1.375s0.828 0.688 1.375 0.906c1.578 0.625 5.328 0.484 7.078 0.484s5.5 0.141 7.078-0.484c0.547-0.219 0.953-0.484 1.375-0.906s0.688-0.828 0.906-1.375c0.625-1.578 0.484-5.328 0.484-7.078s0.141-5.5-0.484-7.078c-0.219-0.547-0.484-0.953-0.906-1.375s-0.828-0.688-1.375-0.906c-1.578-0.625-5.328-0.484-7.078-0.484zM24 14c0 1.656 0.016 3.297-0.078 4.953-0.094 1.922-0.531 3.625-1.937 5.031s-3.109 1.844-5.031 1.937c-1.656 0.094-3.297 0.078-4.953 0.078s-3.297 0.016-4.953-0.078c-1.922-0.094-3.625-0.531-5.031-1.937s-1.844-3.109-1.937-5.031c-0.094-1.656-0.078-3.297-0.078-4.953s-0.016-3.297 0.078-4.953c0.094-1.922 0.531-3.625 1.937-5.031s3.109-1.844 5.031-1.937c1.656-0.094 3.297-0.078 4.953-0.078s3.297-0.016 4.953 0.078c1.922 0.094 3.625 0.531 5.031 1.937s1.844 3.109 1.937 5.031c0.094 1.656 0.078 3.297 0.078 4.953z"></path>
-                                </svg>
+                                <path
+                                    d="M16 14c0-2.203-1.797-4-4-4s-4 1.797-4 4 1.797 4 4 4 4-1.797 4-4zM18.156 14c0 3.406-2.75 6.156-6.156 6.156s-6.156-2.75-6.156-6.156 2.75-6.156 6.156-6.156 6.156 2.75 6.156 6.156zM19.844 7.594c0 0.797-0.641 1.437-1.437 1.437s-1.437-0.641-1.437-1.437 0.641-1.437 1.437-1.437 1.437 0.641 1.437 1.437zM12 4.156c-1.75 0-5.5-0.141-7.078 0.484-0.547 0.219-0.953 0.484-1.375 0.906s-0.688 0.828-0.906 1.375c-0.625 1.578-0.484 5.328-0.484 7.078s-0.141 5.5 0.484 7.078c0.219 0.547 0.484 0.953 0.906 1.375s0.828 0.688 1.375 0.906c1.578 0.625 5.328 0.484 7.078 0.484s5.5 0.141 7.078-0.484c0.547-0.219 0.953-0.484 1.375-0.906s0.688-0.828 0.906-1.375c0.625-1.578 0.484-5.328 0.484-7.078s0.141-5.5-0.484-7.078c-0.219-0.547-0.484-0.953-0.906-1.375s-0.828-0.688-1.375-0.906c-1.578-0.625-5.328-0.484-7.078-0.484zM24 14c0 1.656 0.016 3.297-0.078 4.953-0.094 1.922-0.531 3.625-1.937 5.031s-3.109 1.844-5.031 1.937c-1.656 0.094-3.297 0.078-4.953 0.078s-3.297 0.016-4.953-0.078c-1.922-0.094-3.625-0.531-5.031-1.937s-1.844-3.109-1.937-5.031c-0.094-1.656-0.078-3.297-0.078-4.953s-0.016-3.297 0.078-4.953c0.094-1.922 0.531-3.625 1.937-5.031s3.109-1.844 5.031-1.937c1.656-0.094 3.297-0.078 4.953-0.078s3.297-0.016 4.953 0.078c1.922 0.094 3.625 0.531 5.031 1.937s1.844 3.109 1.937 5.031c0.094 1.656 0.078 3.297 0.078 4.953z">
+                                </path>
+                            </svg>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
-    <section class="upgrade" style="background-image: url(images/upgrade-bg.jpg); background-size: cover; background-position: center;
+    <section id="home" class="home" style="background-image: url(images/upgrade-bg.jpg); background-size: cover; background-position: center;
     background-repeat: no-repeat; ">
-    <div class="upgrade-bg"></div>
+        <div class="home-bg"></div>
         <div class="container">
-            <div class="upgrade__inner">
-                <h3 class="upgrade__small-title">new way to build a healthy lifestyle!</h3>
-                <h1 class="upgrade__title">UPGRADE YOUR BODY AT GYMSO FITNESS</h1>
-                     <a href="#" class="upgrade__button-odd">
-                         Get started
-                     </a>
-                     <a href="#" class="upgrade__button-even">
-                         Learn more
-                    </a>
+            <div class="home__inner">
+                <h3 class="home__small-title">
+                    new way to build a healthy lifestyle!
+                </h3>
+                <h1 class="home__title">
+                    upgrade YOUR BODY AT GYMSO FITNESS
+                </h1>
+                <a href="#" class="home__button-odd">
+                    Get started
+                </a>
+                <a href="#" class="home__button-even">
+                    Learn more
+                </a>
             </div>
         </div>
     </section>
@@ -101,20 +124,22 @@
                 <div class="newto__left">
                     <div class="newto-title">
                         New to the gymso?
-                        <span> 
-                            Your membership is up to 2 months FREE ($62.50 per month)
+                        <span>
+                            Your membership is up to 2 month FREE ($62.50 per month)
                         </span>
-                        </div>
-                        <div class="newto__left-text">
-                            Gymso is free HTML template by Tooplate for your commercial website. Bootstrap v4.2.1 Layout. Feel free to use it.
-                        </div>
-                        <a href="#" class="newto__left-link"> Become a member today</a>
                     </div>
-                
+                    <div class="newto__left-text">
+                        Gymso is free HTML template by Tooplate for your commercial website. Bootstrap v4.2.1 Layout.
+                        Feel free to use it.
+                    </div>
+                    <a href="#" class="newto__left-link"> Become a member today</a>
+                </div>
+
                 <div class="newto__right">
                     <div class="newto-title">
                         Working hours
-                    </div> 
+
+                    </div>
                     <ul class="newto__right-days">
                         <li>
                             Sunday : Closed
@@ -139,464 +164,494 @@
             </div>
         </div>
     </section>
-    <section class="hello">
+    <section id="about" class="about">
         <div class="container">
-            <div class="hello__inner">
-                <div class="hello__description">
-                    <div class="hello__description-title">
+            <div class="about__inner">
+                <div class="about__description">
+                    <div class="about__description-title">
                         Hello, we are Gymso
                     </div>
-                    <div class="hello__description-text">
-                        You are NOT allowed to redistribute this HTML template downloadable ZIP file on any template collection site. You are allowed to use this template for your personal or business websites.
+                    <div class="about__description-text">
+                        You are NOT allowed to redistribute this HTML template downloadable ZIP file on any template
+                        collection site. You are allowed to use this template for your personal or business websites.
                     </div>
-                    <div class="hello__description-bot">
-                        If you have any question regarding 
+                    <div class="about__description-bot">
+                        If you have any question regarding
                         <span>
-                         <a href="#">Gymso Fitness HTML template 
-                         </a>   
+                            <a href="#">Gymso Fitness HTML template
+                            </a>
                         </span>
-                         , you can
-                         <span>
-                             <a href="#">
+                        , you can
+                        <span>
+                            <a href="#">
                                 contact Tooplate
-                             </a>
-                            </span> 
-                             immediately. Thank you.
+                            </a>
+                        </span>
+                        immediately. Thank you.
                     </div>
                 </div>
-                <div class="hello__trainers">
-                    <div class="hello__trainers-box">
-                        <div class="hello__trainers-div">
-                            <a href="#" class="hello__trainers-link"> 
-                                <img src="images/hello/trainer-1.jpg" alt="" class="hello__trainers-div-img">
+                <div class="about__trainers">
+                    <div class="about__trainers-box">
+                        <div class="about__trainers-div">
+                            <a href="#" class="about__trainers-link">
+                                <img src="images/trainer-1.jpg" alt="" class="about__trainers-div-img">
                             </a>
-                            </div>
-                        <div class="hello__trainers__bot">
-                            <div class="hello__trainers-name">
-                                Mary Yan
-                                <span class="hello__trainers-type">
+                        </div>
+                        <div class="about__trainers__bot">
+                            <div class="about__trainers-name">
+                                <a href="#">
+                                    Mary Yan
+                                </a>
+                                <span class="about__trainers-type">
                                     Yoga Instructor
                                 </span>
                             </div>
-                                 <ul class="hello__trainers__bot__social">
-                                      <li>
-                                           <a class="hello__trainers__bot__social-link" href="#">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="31" height="28" viewBox="0 0 31 28">
-                                        <title>vk</title>
-                                        <path d="M29.953 8.125c0.234 0.641-0.5 2.141-2.344 4.594-3.031 4.031-3.359 3.656-0.859 5.984 2.406 2.234 2.906 3.313 2.984 3.453 0 0 1 1.75-1.109 1.766l-4 0.063c-0.859 0.172-2-0.609-2-0.609-1.5-1.031-2.906-3.703-4-3.359 0 0-1.125 0.359-1.094 2.766 0.016 0.516-0.234 0.797-0.234 0.797s-0.281 0.297-0.828 0.344h-1.797c-3.953 0.25-7.438-3.391-7.438-3.391s-3.813-3.938-7.156-11.797c-0.219-0.516 0.016-0.766 0.016-0.766s0.234-0.297 0.891-0.297l4.281-0.031c0.406 0.063 0.688 0.281 0.688 0.281s0.25 0.172 0.375 0.5c0.703 1.75 1.609 3.344 1.609 3.344 1.563 3.219 2.625 3.766 3.234 3.437 0 0 0.797-0.484 0.625-4.375-0.063-1.406-0.453-2.047-0.453-2.047-0.359-0.484-1.031-0.625-1.328-0.672-0.234-0.031 0.156-0.594 0.672-0.844 0.766-0.375 2.125-0.391 3.734-0.375 1.266 0.016 1.625 0.094 2.109 0.203 1.484 0.359 0.984 1.734 0.984 5.047 0 1.062-0.203 2.547 0.562 3.031 0.328 0.219 1.141 0.031 3.141-3.375 0 0 0.938-1.625 1.672-3.516 0.125-0.344 0.391-0.484 0.391-0.484s0.25-0.141 0.594-0.094l4.5-0.031c1.359-0.172 1.578 0.453 1.578 0.453z"></path>
+                            <ul class="about__trainers__bot__social">
+                                <li>
+                                    <a class="about__trainers__bot__social-link" href="#">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="31" height="28"
+                                            viewBox="0 0 31 28">
+                                            <title>vk</title>
+                                            <path
+                                                d="M29.953 8.125c0.234 0.641-0.5 2.141-2.344 4.594-3.031 4.031-3.359 3.656-0.859 5.984 2.406 2.234 2.906 3.313 2.984 3.453 0 0 1 1.75-1.109 1.766l-4 0.063c-0.859 0.172-2-0.609-2-0.609-1.5-1.031-2.906-3.703-4-3.359 0 0-1.125 0.359-1.094 2.766 0.016 0.516-0.234 0.797-0.234 0.797s-0.281 0.297-0.828 0.344h-1.797c-3.953 0.25-7.438-3.391-7.438-3.391s-3.813-3.938-7.156-11.797c-0.219-0.516 0.016-0.766 0.016-0.766s0.234-0.297 0.891-0.297l4.281-0.031c0.406 0.063 0.688 0.281 0.688 0.281s0.25 0.172 0.375 0.5c0.703 1.75 1.609 3.344 1.609 3.344 1.563 3.219 2.625 3.766 3.234 3.437 0 0 0.797-0.484 0.625-4.375-0.063-1.406-0.453-2.047-0.453-2.047-0.359-0.484-1.031-0.625-1.328-0.672-0.234-0.031 0.156-0.594 0.672-0.844 0.766-0.375 2.125-0.391 3.734-0.375 1.266 0.016 1.625 0.094 2.109 0.203 1.484 0.359 0.984 1.734 0.984 5.047 0 1.062-0.203 2.547 0.562 3.031 0.328 0.219 1.141 0.031 3.141-3.375 0 0 0.938-1.625 1.672-3.516 0.125-0.344 0.391-0.484 0.391-0.484s0.25-0.141 0.594-0.094l4.5-0.031c1.359-0.172 1.578 0.453 1.578 0.453z">
+                                            </path>
                                         </svg>
-                                        </a>
-                                    </li> 
-                                <li> 
-                                     <a class="hello__trainers__bot__social-link twitter" href="#">
-                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="28" viewBox="0 0 26 28">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="about__trainers__bot__social-link twitter" href="#">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="28"
+                                            viewBox="0 0 26 28">
                                             <title>twitter</title>
-                                            <path d="M25.312 6.375c-0.688 1-1.547 1.891-2.531 2.609 0.016 0.219 0.016 0.438 0.016 0.656 0 6.672-5.078 14.359-14.359 14.359-2.859 0-5.516-0.828-7.75-2.266 0.406 0.047 0.797 0.063 1.219 0.063 2.359 0 4.531-0.797 6.266-2.156-2.219-0.047-4.078-1.5-4.719-3.5 0.313 0.047 0.625 0.078 0.953 0.078 0.453 0 0.906-0.063 1.328-0.172-2.312-0.469-4.047-2.5-4.047-4.953v-0.063c0.672 0.375 1.453 0.609 2.281 0.641-1.359-0.906-2.25-2.453-2.25-4.203 0-0.938 0.25-1.797 0.688-2.547 2.484 3.062 6.219 5.063 10.406 5.281-0.078-0.375-0.125-0.766-0.125-1.156 0-2.781 2.25-5.047 5.047-5.047 1.453 0 2.766 0.609 3.687 1.594 1.141-0.219 2.234-0.641 3.203-1.219-0.375 1.172-1.172 2.156-2.219 2.781 1.016-0.109 2-0.391 2.906-0.781z"></path>
-                                            </svg>
-                                     </a>
-                                    </li> 
-                                 </ul>
-                                 </div>
-                            </div>
-                    <div class="hello__trainers-box">
-                        
-                            <div class="hello__trainers-div">
-                                <a href="#" class="hello__trainers-link"> 
-                                <img src="images/hello/trainer-2.jpg" alt="" class="hello__trainers-div-img">
+                                            <path
+                                                d="M25.312 6.375c-0.688 1-1.547 1.891-2.531 2.609 0.016 0.219 0.016 0.438 0.016 0.656 0 6.672-5.078 14.359-14.359 14.359-2.859 0-5.516-0.828-7.75-2.266 0.406 0.047 0.797 0.063 1.219 0.063 2.359 0 4.531-0.797 6.266-2.156-2.219-0.047-4.078-1.5-4.719-3.5 0.313 0.047 0.625 0.078 0.953 0.078 0.453 0 0.906-0.063 1.328-0.172-2.312-0.469-4.047-2.5-4.047-4.953v-0.063c0.672 0.375 1.453 0.609 2.281 0.641-1.359-0.906-2.25-2.453-2.25-4.203 0-0.938 0.25-1.797 0.688-2.547 2.484 3.062 6.219 5.063 10.406 5.281-0.078-0.375-0.125-0.766-0.125-1.156 0-2.781 2.25-5.047 5.047-5.047 1.453 0 2.766 0.609 3.687 1.594 1.141-0.219 2.234-0.641 3.203-1.219-0.375 1.172-1.172 2.156-2.219 2.781 1.016-0.109 2-0.391 2.906-0.781z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about__trainers-box">
+
+                        <div class="about__trainers-div">
+                            <a href="#" class="about__trainers-link">
+                                <img src="images/trainer-2.jpg" alt="" class="about__trainers-div-img">
                             </a>
-                                </div>
-                        
-                        <div class="hello__trainers__bot">
-                            <div class="hello__trainers-name">
-                                Catherina
-                                <span class="hello__trainers-type">
+                        </div>
+
+                        <div class="about__trainers__bot">
+                            <div class="about__trainers-name">
+                                <a href="#">
+                                    Catherina
+                                </a>
+                                <span class="about__trainers-type">
                                     Body trainer
                                 </span>
                             </div>
-                                 <ul class="hello__trainers__bot__social">
-                                      <li>
-                                           <a class="hello__trainers__bot__social-link" href="#">
-                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="31" height="28" viewBox="0 0 31 28">
-                                        <title>vk</title>
-                                        <path d="M29.953 8.125c0.234 0.641-0.5 2.141-2.344 4.594-3.031 4.031-3.359 3.656-0.859 5.984 2.406 2.234 2.906 3.313 2.984 3.453 0 0 1 1.75-1.109 1.766l-4 0.063c-0.859 0.172-2-0.609-2-0.609-1.5-1.031-2.906-3.703-4-3.359 0 0-1.125 0.359-1.094 2.766 0.016 0.516-0.234 0.797-0.234 0.797s-0.281 0.297-0.828 0.344h-1.797c-3.953 0.25-7.438-3.391-7.438-3.391s-3.813-3.938-7.156-11.797c-0.219-0.516 0.016-0.766 0.016-0.766s0.234-0.297 0.891-0.297l4.281-0.031c0.406 0.063 0.688 0.281 0.688 0.281s0.25 0.172 0.375 0.5c0.703 1.75 1.609 3.344 1.609 3.344 1.563 3.219 2.625 3.766 3.234 3.437 0 0 0.797-0.484 0.625-4.375-0.063-1.406-0.453-2.047-0.453-2.047-0.359-0.484-1.031-0.625-1.328-0.672-0.234-0.031 0.156-0.594 0.672-0.844 0.766-0.375 2.125-0.391 3.734-0.375 1.266 0.016 1.625 0.094 2.109 0.203 1.484 0.359 0.984 1.734 0.984 5.047 0 1.062-0.203 2.547 0.562 3.031 0.328 0.219 1.141 0.031 3.141-3.375 0 0 0.938-1.625 1.672-3.516 0.125-0.344 0.391-0.484 0.391-0.484s0.25-0.141 0.594-0.094l4.5-0.031c1.359-0.172 1.578 0.453 1.578 0.453z"></path>
+                            <ul class="about__trainers__bot__social">
+                                <li>
+                                    <a class="about__trainers__bot__social-link" href="#">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="31" height="28"
+                                            viewBox="0 0 31 28">
+                                            <title>vk</title>
+                                            <path
+                                                d="M29.953 8.125c0.234 0.641-0.5 2.141-2.344 4.594-3.031 4.031-3.359 3.656-0.859 5.984 2.406 2.234 2.906 3.313 2.984 3.453 0 0 1 1.75-1.109 1.766l-4 0.063c-0.859 0.172-2-0.609-2-0.609-1.5-1.031-2.906-3.703-4-3.359 0 0-1.125 0.359-1.094 2.766 0.016 0.516-0.234 0.797-0.234 0.797s-0.281 0.297-0.828 0.344h-1.797c-3.953 0.25-7.438-3.391-7.438-3.391s-3.813-3.938-7.156-11.797c-0.219-0.516 0.016-0.766 0.016-0.766s0.234-0.297 0.891-0.297l4.281-0.031c0.406 0.063 0.688 0.281 0.688 0.281s0.25 0.172 0.375 0.5c0.703 1.75 1.609 3.344 1.609 3.344 1.563 3.219 2.625 3.766 3.234 3.437 0 0 0.797-0.484 0.625-4.375-0.063-1.406-0.453-2.047-0.453-2.047-0.359-0.484-1.031-0.625-1.328-0.672-0.234-0.031 0.156-0.594 0.672-0.844 0.766-0.375 2.125-0.391 3.734-0.375 1.266 0.016 1.625 0.094 2.109 0.203 1.484 0.359 0.984 1.734 0.984 5.047 0 1.062-0.203 2.547 0.562 3.031 0.328 0.219 1.141 0.031 3.141-3.375 0 0 0.938-1.625 1.672-3.516 0.125-0.344 0.391-0.484 0.391-0.484s0.25-0.141 0.594-0.094l4.5-0.031c1.359-0.172 1.578 0.453 1.578 0.453z">
+                                            </path>
                                         </svg>
-                                        </a>
-                                    </li> 
-                                <li> 
-                                     <a class="hello__trainers__bot__social-link twitter" href="#">
-                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="28" viewBox="0 0 26 28">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="about__trainers__bot__social-link twitter" href="#">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="28"
+                                            viewBox="0 0 26 28">
                                             <title>twitter</title>
-                                            <path d="M25.312 6.375c-0.688 1-1.547 1.891-2.531 2.609 0.016 0.219 0.016 0.438 0.016 0.656 0 6.672-5.078 14.359-14.359 14.359-2.859 0-5.516-0.828-7.75-2.266 0.406 0.047 0.797 0.063 1.219 0.063 2.359 0 4.531-0.797 6.266-2.156-2.219-0.047-4.078-1.5-4.719-3.5 0.313 0.047 0.625 0.078 0.953 0.078 0.453 0 0.906-0.063 1.328-0.172-2.312-0.469-4.047-2.5-4.047-4.953v-0.063c0.672 0.375 1.453 0.609 2.281 0.641-1.359-0.906-2.25-2.453-2.25-4.203 0-0.938 0.25-1.797 0.688-2.547 2.484 3.062 6.219 5.063 10.406 5.281-0.078-0.375-0.125-0.766-0.125-1.156 0-2.781 2.25-5.047 5.047-5.047 1.453 0 2.766 0.609 3.687 1.594 1.141-0.219 2.234-0.641 3.203-1.219-0.375 1.172-1.172 2.156-2.219 2.781 1.016-0.109 2-0.391 2.906-0.781z"></path>
-                                            </svg>
-                                     </a>
-                                    </li> 
-                                 </ul>
-                                 </div>
-                            </div>
+                                            <path
+                                                d="M25.312 6.375c-0.688 1-1.547 1.891-2.531 2.609 0.016 0.219 0.016 0.438 0.016 0.656 0 6.672-5.078 14.359-14.359 14.359-2.859 0-5.516-0.828-7.75-2.266 0.406 0.047 0.797 0.063 1.219 0.063 2.359 0 4.531-0.797 6.266-2.156-2.219-0.047-4.078-1.5-4.719-3.5 0.313 0.047 0.625 0.078 0.953 0.078 0.453 0 0.906-0.063 1.328-0.172-2.312-0.469-4.047-2.5-4.047-4.953v-0.063c0.672 0.375 1.453 0.609 2.281 0.641-1.359-0.906-2.25-2.453-2.25-4.203 0-0.938 0.25-1.797 0.688-2.547 2.484 3.062 6.219 5.063 10.406 5.281-0.078-0.375-0.125-0.766-0.125-1.156 0-2.781 2.25-5.047 5.047-5.047 1.453 0 2.766 0.609 3.687 1.594 1.141-0.219 2.234-0.641 3.203-1.219-0.375 1.172-1.172 2.156-2.219 2.781 1.016-0.109 2-0.391 2.906-0.781z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                </div>  
+                    </div>
+                </div>
             </div>
         </div>
+        </div>
     </section>
-    <section class="our">
+    <section id="classes" class="classes">
         <div class="container">
-            <div class="our__inner">
-                <h3 class="our-title-small">
+            <div class="classes__inner">
+                <h3 class="classes-title-small">
                     Get A Perfect Body
                 </h3>
-                <h2 class="our-title">Our Training Classes</h2>
-                <div class="our__items">
-                    <div class="our__item">
-                        <div class="our__item-div">
-                                 <a href="#" class="our__item-link">
-                                     <img src="images/our/yoga.jpg" alt="" class="our__item-img">
-                                 </a>
+                <h2 class="classes-title">Our Training Classes</h2>
+                <div class="classes__items">
+                    <div class="classes__item">
+                        <div class="classes__item-div">
+                            <a href="#" class="classes__item-link">
+                                <img src="images/yoga.jpg" alt="" class="classes__item-img">
+                            </a>
+                        </div>
+                        <div class="classes__item__box">
+                            <div class="classes__item__box-title">
+                                <a class="sport-kinds" href="">
+                                    Yoga
+                                </a>
                             </div>
-                             <div class="our__item__box">
-                                <div class="our__item__box-title">
-                                   <a class="sport-kinds" href="">
-                                       Yoga
-                                    </a> 
-                                </div>
-                                <div class="our__item__box-subtitle">
-                                   <span>
-                                        Trained by
-                                    </span>
-                                    - 
-                                    <a class="trainer-name" href="#">
-                                        Jok 
-                                    </a> 
-                                </div>
-                                <div class="our__item__box-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing
-                                </div>
-                                <div class="our__item__box-price">
-                                    <span>$12</span>
-                                </div>
-                             </div>
-                    </div>
-                    <div class="our__item">
-                        <div class="our__item-div">
-                                 <a href="#" class="our__item-link">
-                                     <img src="images/our/crossfit.jpg" alt="" class="our__item-img">
-                                 </a>
+                            <div class="classes__item__box-subtitle">
+                                <span>
+                                    Trained by
+                                </span>
+                                -
+                                <a class="trainer-name" href="#">
+                                    Jok
+                                </a>
                             </div>
-                             <div class="our__item__box">
-                                <div class="our__item__box-title">
-                                    <a class="sport-kinds" href="">
-                                        Aerobic
-                                     </a> 
-                                </div>
-                                <div class="our__item__box-subtitle">
-                                   <span>
-                                        Trained by
-                                    </span>
-                                    - 
-                                    <a class="trainer-name" href="#">
-                                        Mary 
-                                    </a> 
-                                </div>
-                                <div class="our__item__box-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing
-                                </div>
-                                <div class="our__item__box-price">
-                                    <span>$34</span>
-                                </div>
-                             </div>
-                    </div>
-                    <div class="our__item">
-                        <div class="our__item-div">
-                                 <a href="#" class="our__item-link">
-                                     <img src="images/our/cardio.jpg" alt="" class="our__item-img">
-                                 </a>
+                            <div class="classes__item__box-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing
+
+
+
                             </div>
-                             <div class="our__item__box">
-                                <div class="our__item__box-title">
-                                    <a class="sport-kinds" href="">
-                                        Cardio
-                                     </a> 
-                                </div>
-                                <div class="our__item__box-subtitle">
-                                   <span>
-                                        Trained by
-                                    </span>
-                                    - 
-                                    <a class="trainer-name" href="#">
-                                        Olga 
-                                    </a>  
-                                </div>
-                                <div class="our__item__box-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing
-                                </div>
-                                <div class="our__item__box-price">
-                                   <span>$500</span> 
-                                </div>
-                             </div>
+                            <div class="classes__item__box-price">
+                                <span>$12</span>
+                            </div>
+                        </div>
                     </div>
-                  
-                
+                    <div class="classes__item">
+                        <div class="classes__item-div">
+                            <a href="#" class="classes__item-link">
+                                <img src="images/crossfit.jpg" alt="" class="classes__item-img">
+                            </a>
+                        </div>
+                        <div class="classes__item__box">
+                            <div class="classes__item__box-title">
+                                <a class="sport-kinds" href="">
+                                    Aerobic
+                                </a>
+                            </div>
+                            <div class="classes__item__box-subtitle">
+                                <span>
+                                    Trained by
+                                </span>
+                                -
+                                <a class="trainer-name" href="#">
+                                    Mary
+                                </a>
+                            </div>
+                            <div class="classes__item__box-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                            </div>
+                            <div class="classes__item__box-price">
+                                <span>$34</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="classes__item">
+                        <div class="classes__item-div">
+                            <a href="#" class="classes__item-link">
+                                <img src="images/cardio.jpg" alt="" class="classes__item-img">
+                            </a>
+                        </div>
+                        <div class="classes__item__box">
+                            <div class="classes__item__box-title">
+                                <a class="sport-kinds" href="">
+                                    Cardio
+                                </a>
+                            </div>
+                            <div class="classes__item__box-subtitle">
+                                <span>
+                                    Trained by
+                                </span>
+                                -
+                                <a class="trainer-name" href="#">
+                                    Olga
+                                </a>
+                            </div>
+                            <div class="classes__item__box-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                            </div>
+                            <div class="classes__item__box-price">
+                                <span>$500</span>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>
     </section>
-    <section class="timetable">
+    <section id="shedules" class="shedules">
         <div class="container">
-            <div class="timetable__inner">
-                <div class="timetable-subtitle">
-                        our weekly GYM schedules
+            <div class="shedules__inner">
+                <div class="shedules-subtitle">
+                    our weekly GYM schedules
                 </div>
-                <div class="timetable-title">
+                <div class="shedules-title">
                     Workout Timetable
                 </div>
-                <div class="timetable__box">
-                    <div class="timetable__box-time">
+                <div class="shedules__box">
+                    <div class="shedules__box-time">
                         <ul>
-                            <li class="timetable__box-red-item" >
-                               img 
+                            <li class="shedules__box-red-item">
+                                img
                             </li>
                             <li>
                                 7:00 АМ
-                             </li>
-                             <li>
+                            </li>
+                            <li>
                                 9:00 АМ
-                             </li >
-                             <li>
+                            </li>
+                            <li>
                                 11:00 АМ
-                             </li>
-                             <li >
+                            </li>
+                            <li>
                                 2:00 PМ
-                             </li>    
-                        </ul>
-                    </div>
-                    <div class="timetable__box-day">
-                        <ul>
-                            <li class="timetable__box-red-item">
-                                Monday
-                            </li>
-                            <li>
-                                Cardio
-                                <span>
-                                    7:00 AM - 9:00 AM 
-                                </span>
-                            </li>
-                            <li>
-                                
-                                <span>
-                                   
-                                </span>
-                            </li>
-                            <li>
-                                
-                                <span>
-                            
-                            </li>
-                            <li>
-                                Boxing
-                                <span>
-                                    2:00 PM - 4:00 PM
-                                </span>
                             </li>
                         </ul>
                     </div>
-                    <div class="timetable__box-day">
-                        <ul>
-                            <li class="timetable__box-red-item">
-                                tuesday
-                            </li>
-                            <li>
-                                Power Fitness
-                                <span>
-                                    7:00 AM - 9:00 AM 
-                                </span>
-                            </li>
-                            <li>
-                                
-                                <span>
-                                   
-                                </span>
-                            </li>
-                            <li>
-                                Power lifting
-                                <span>
-                                    33:00 PM - 66:00 PM
-                                </span>
-                            </li>
-                            <li>
-                                Power lifting
-                                <span>
-                                    3:00 PM - 6:00 PM
-                                </span>
-                            </li>
-                        </ul>
+                    <div class="shedules__box__slider">
+                        <div class="shedules__box-day">
+                            <ul>
+                                <li class="shedules__box-red-item">
+                                    Monday
+                                </li>
+                                <li>
+                                    Cardio GYM 
+                                    <span>
+                                        7:00 AM - 9:00 AM
+                                    </span>
+                                </li>
+                                <li>
+
+                                    <span>
+
+                                    </span>
+                                </li>
+                                <li>
+
+                                    <span>
+
+                                </li>
+                                <li>
+                                    Boxing
+                                    <span>
+                                        2:00 PM - 4:00 PM
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="shedules__box-day">
+                            <ul>
+                                <li class="shedules__box-red-item">
+                                    tuesday
+                                </li>
+                                <li>
+                                    Power Fitness
+                                    <span>
+                                        7:00 AM - 9:00 AM
+                                    </span>
+                                </li>
+                                <li>
+
+                                    <span>
+
+                                    </span>
+                                </li>
+                                <li>
+                                    Power lifting
+                                    <span>
+                                        33:00 PM - 66:00 PM
+                                    </span>
+                                </li>
+                                <li>
+                                    Power lifting
+                                    <span>
+                                        3:00 PM - 6:00 PM
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="shedules__box-day">
+                            <ul>
+                                <li class="shedules__box-red-item">
+                                    Wednesday
+                                </li>
+                                <li>
+
+                                    <span>
+
+                                    </span>
+                                </li>
+                                <li>
+                                    Boxing
+                                    <span>
+                                        8:00 AM - 9:00 AM
+                                    </span>
+                                </li>
+                                <li>
+                                    Areobic
+                                    <span>
+                                        11:30 AM - 3:30 PM
+                                    </span>
+                                </li>
+                                <li>
+
+                                    <span>
+
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="shedules__box-day">
+                            <ul>
+                                <li class="shedules__box-red-item">
+                                    thusday
+                                </li>
+                                <li>
+
+                                    <span>
+
+                                    </span>
+                                </li>
+                                <li>
+                                    Areobic
+                                    <span>
+                                        8:00 AM - 9:00 AM
+                                    </span>
+                                </li>
+                                <li>
+
+                                    <span>
+
+                                    </span>
+                                </li>
+                                <li>
+                                    Cardio
+                                    <span>
+                                        6:00 PM - 9:00 PM
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="shedules__box-day">
+                            <ul>
+                                <li class="shedules__box-red-item">
+                                    friday
+                                </li>
+                                <li>
+                                    Yoga Section
+                                    <span>
+                                        7:00 AM - 9:00 AM
+                                    </span>
+                                </li>
+                                <li>
+
+                                    <span>
+
+                                    </span>
+                                </li>
+                                <li>
+                                    Body work
+                                    <span>
+                                        11:50 AM - 5:20 PM
+                                    </span>
+                                </li>
+                                <li>
+
+                                    <span>
+
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="shedules__box-day timetable__box-saturday">
+                            <ul>
+                                <li class="shedules__box-red-item">
+                                    saturday
+                                </li>
+                                <li>
+
+                                    <span>
+
+                                    </span>
+                                </li>
+                                <li>
+                                    Cardio
+                                    <span>
+                                        8:00 AM - 9:00 AM
+                                    </span>
+                                </li>
+                                <li>
+
+                                    <span>
+
+                                    </span>
+                                </li>
+                                <li>
+                                    Crossfit
+                                    <span>
+                                        5:00 PM - 7:00 PM
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="timetable__box-day">
-                        <ul>
-                            <li class="timetable__box-red-item">
-                                Wednesday
-                            </li>
-                            <li>
-                               
-                                <span>
-                                   
-                                </span>
-                            </li>
-                            <li>
-                                Boxing
-                                <span>
-                                    8:00 AM - 9:00 AM
-                                </span>
-                            </li>
-                            <li>
-                                Areobic
-                                <span>
-                                    11:30 AM - 3:30 PM
-                                </span>
-                            </li>
-                            <li>
-                                
-                                <span>
-                                    
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="timetable__box-day">
-                        <ul>
-                            <li class="timetable__box-red-item">
-                                thusday
-                            </li>
-                            <li>
-                               
-                                <span>
-                                   
-                                </span>
-                            </li>
-                            <li>
-                                Areobic
-                                <span>
-                                    8:00 AM - 9:00 AM
-                                </span>
-                            </li>
-                            <li>
-                                
-                                <span>
-                                    
-                                </span>
-                            </li>
-                            <li>
-                                Cardio
-                                <span>
-                                    6:00 PM - 9:00 PM 
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="timetable__box-day">
-                        <ul>
-                            <li class="timetable__box-red-item">
-                                friday
-                            </li>
-                            <li>
-                                Yoga Section
-                                <span>
-                                    7:00 AM - 9:00 AM
-                                </span>
-                            </li>
-                            <li>
-                                
-                                <span>
-                                    
-                                </span>
-                            </li>
-                            <li>
-                                Body work
-                                <span>
-                                    11:50 AM - 5:20 PM
-                                </span>
-                            </li>
-                            <li>
-                                
-                                <span>
-                                    
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="timetable__box-day timetable__box-saturday">
-                        <ul>
-                            <li class="timetable__box-red-item">
-                                saturday
-                            </li>
-                            <li>
-                                
-                                <span>
-                                    
-                                </span>
-                            </li>
-                            <li>
-                                Cardio
-                                <span>
-                                    8:00 AM - 9:00 AM
-                                </span>
-                            </li>
-                            <li>
-                               
-                                <span>
-                                    
-                                </span>
-                            </li>
-                            <li>
-                                Crossfit
-                                <span>
-                                    5:00 PM - 7:00 PM
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                    
                 </div>
             </div>
         </div>
     </section>
-    <section class="feedback">
+    <section id="contact" class="contact">
         <div class="container">
-            <div class="feedback-inner">
-           <div class="feedback__box">
-                <h3 class="feedback__box-title">
-                    Feel free to ask anything
-                </h3> 
-                <div class="feedback__form">
-                    <input type="text" class="feedback__form-name" placeholder="Name">
-                    <input type="email" class="feedback__form-email" placeholder="Email">
-                    <textarea class="feedback__form-text">Message</textarea>
-                    <button class="feedback-button">
-                        Send Message
-                    </button>
-                </div>   
-               
-           </div>
-           
-         
-           <div class="feedback__box">
-            <h3 class="feedback__box-title">
-                Where you can find us
-                
-            </h3> 
-            <div class="feedback__address">
-               
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="28" viewBox="0 0 16 28">
-                        <title>map-marker</title>
-                        <path d="M12 10c0-2.203-1.797-4-4-4s-4 1.797-4 4 1.797 4 4 4 4-1.797 4-4zM16 10c0 0.953-0.109 1.937-0.516 2.797l-5.688 12.094c-0.328 0.688-1.047 1.109-1.797 1.109s-1.469-0.422-1.781-1.109l-5.703-12.094c-0.406-0.859-0.516-1.844-0.516-2.797 0-4.422 3.578-8 8-8s8 3.578 8 8z"></path>
+            <div class="contact-inner">
+                <div class="contact__box">
+                    <h3 class="contact__box-title">
+                        Feel free to ask anything
+                    </h3>
+                    <div class="contact__form">
+                        <input type="text" class="contact__form-name" placeholder="Name">
+                        <input type="email" class="contact__form-email" placeholder="Email">
+                        <textarea class="contact__form-text" placeholder="Message"></textarea>
+                        <button class="contact-button">
+                            Send Message
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <div class="contact__box">
+                    <h3 class="contact__box-title">
+                        Where you can find us
+
+                    </h3>
+                    <div class="contact__address">
+
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="28"
+                            viewBox="0 0 16 28">
+                            <title>map-marker</title>
+                            <path
+                                d="M12 10c0-2.203-1.797-4-4-4s-4 1.797-4 4 1.797 4 4 4 4-1.797 4-4zM16 10c0 0.953-0.109 1.937-0.516 2.797l-5.688 12.094c-0.328 0.688-1.047 1.109-1.797 1.109s-1.469-0.422-1.781-1.109l-5.703-12.094c-0.406-0.859-0.516-1.844-0.516-2.797 0-4.422 3.578-8 8-8s8 3.578 8 8z">
+                            </path>
                         </svg>
-                         120-240 Rio de Janeiro - State of Rio de Janeiro, Brazil
-                
-            </div>   
-            <div class="feedback-map">
-                <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс.Карты</a><a href="https://yandex.ru/maps/?feedback=object%2Fadd&ll=37.560156%2C55.392111&utm_medium=mapframe&utm_source=maps&z=16" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUazPGExB" width="420" height="300"  allowfullscreen="true" style="position:relative;"></iframe></div>
+                        120-240 Rio de Janeiro - State of Rio de Janeiro, Brazil
+
+                    </div>
+                    <div class="contact-map">
+                        <div style="position:relative;overflow:hidden;"><a
+                                href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps"
+                                style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс.Карты</a><a
+                                href="https://yandex.ru/maps/?feedback=object%2Fadd&ll=37.560156%2C55.392111&utm_medium=mapframe&utm_source=maps&z=16"
+                                style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты</a><iframe
+                                src="https://yandex.ru/map-widget/v1/-/CCUazPGExB" width="100%" height="300"
+                                allowfullscreen="true" style="position:relative;"></iframe></div>
+                    </div>
+                </div>
             </div>
-       </div>
-    </div>
-           </div>
+        </div>
         </div>
     </section>
     <footer class="footer">
@@ -606,21 +661,27 @@
                     Copyright © 2020 Gymso Fitness Co.
                     <span>
                         Design: Tooplate
-                    </span> 
+                    </span>
                 </div>
                 <div class="footer-contact">
                     <a href="mailto:petromars444@gmail.com" class="footer-email">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            viewBox="0 0 32 32">
                             <title>mail</title>
-                            <path d="M28 5h-24c-2.209 0-4 1.792-4 4v13c0 2.209 1.791 4 4 4h24c2.209 0 4-1.791 4-4v-13c0-2.208-1.791-4-4-4zM2 10.25l6.999 5.25-6.999 5.25v-10.5zM30 22c0 1.104-0.898 2-2 2h-24c-1.103 0-2-0.896-2-2l7.832-5.875 4.368 3.277c0.533 0.398 1.166 0.6 1.8 0.6 0.633 0 1.266-0.201 1.799-0.6l4.369-3.277 7.832 5.875zM30 20.75l-7-5.25 7-5.25v10.5zM17.199 18.602c-0.349 0.262-0.763 0.4-1.199 0.4s-0.851-0.139-1.2-0.4l-12.8-9.602c0-1.103 0.897-2 2-2h24c1.102 0 2 0.897 2 2l-12.801 9.602z"></path>
-                            </svg>
+                            <path
+                                d="M28 5h-24c-2.209 0-4 1.792-4 4v13c0 2.209 1.791 4 4 4h24c2.209 0 4-1.791 4-4v-13c0-2.208-1.791-4-4-4zM2 10.25l6.999 5.25-6.999 5.25v-10.5zM30 22c0 1.104-0.898 2-2 2h-24c-1.103 0-2-0.896-2-2l7.832-5.875 4.368 3.277c0.533 0.398 1.166 0.6 1.8 0.6 0.633 0 1.266-0.201 1.799-0.6l4.369-3.277 7.832 5.875zM30 20.75l-7-5.25 7-5.25v10.5zM17.199 18.602c-0.349 0.262-0.763 0.4-1.199 0.4s-0.851-0.139-1.2-0.4l-12.8-9.602c0-1.103 0.897-2 2-2h24c1.102 0 2 0.897 2 2l-12.801 9.602z">
+                            </path>
+                        </svg>
                         petromars444@gmail.com
                     </a>
                     <a href="tel:+79251415930" class="footer-tel">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="22" height="28" viewBox="0 0 22 28">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="22" height="28"
+                            viewBox="0 0 22 28">
                             <title>phone</title>
-                            <path d="M22 19.375c0 0.562-0.25 1.656-0.484 2.172-0.328 0.766-1.203 1.266-1.906 1.656-0.922 0.5-1.859 0.797-2.906 0.797-1.453 0-2.766-0.594-4.094-1.078-0.953-0.344-1.875-0.766-2.734-1.297-2.656-1.641-5.859-4.844-7.5-7.5-0.531-0.859-0.953-1.781-1.297-2.734-0.484-1.328-1.078-2.641-1.078-4.094 0-1.047 0.297-1.984 0.797-2.906 0.391-0.703 0.891-1.578 1.656-1.906 0.516-0.234 1.609-0.484 2.172-0.484 0.109 0 0.219 0 0.328 0.047 0.328 0.109 0.672 0.875 0.828 1.188 0.5 0.891 0.984 1.797 1.5 2.672 0.25 0.406 0.719 0.906 0.719 1.391 0 0.953-2.828 2.344-2.828 3.187 0 0.422 0.391 0.969 0.609 1.344 1.578 2.844 3.547 4.813 6.391 6.391 0.375 0.219 0.922 0.609 1.344 0.609 0.844 0 2.234-2.828 3.187-2.828 0.484 0 0.984 0.469 1.391 0.719 0.875 0.516 1.781 1 2.672 1.5 0.313 0.156 1.078 0.5 1.188 0.828 0.047 0.109 0.047 0.219 0.047 0.328z"></path>
-                            </svg>
+                            <path
+                                d="M22 19.375c0 0.562-0.25 1.656-0.484 2.172-0.328 0.766-1.203 1.266-1.906 1.656-0.922 0.5-1.859 0.797-2.906 0.797-1.453 0-2.766-0.594-4.094-1.078-0.953-0.344-1.875-0.766-2.734-1.297-2.656-1.641-5.859-4.844-7.5-7.5-0.531-0.859-0.953-1.781-1.297-2.734-0.484-1.328-1.078-2.641-1.078-4.094 0-1.047 0.297-1.984 0.797-2.906 0.391-0.703 0.891-1.578 1.656-1.906 0.516-0.234 1.609-0.484 2.172-0.484 0.109 0 0.219 0 0.328 0.047 0.328 0.109 0.672 0.875 0.828 1.188 0.5 0.891 0.984 1.797 1.5 2.672 0.25 0.406 0.719 0.906 0.719 1.391 0 0.953-2.828 2.344-2.828 3.187 0 0.422 0.391 0.969 0.609 1.344 1.578 2.844 3.547 4.813 6.391 6.391 0.375 0.219 0.922 0.609 1.344 0.609 0.844 0 2.234-2.828 3.187-2.828 0.484 0 0.984 0.469 1.391 0.719 0.875 0.516 1.781 1 2.672 1.5 0.313 0.156 1.078 0.5 1.188 0.828 0.047 0.109 0.047 0.219 0.047 0.328z">
+                            </path>
+                        </svg>
                         +7-925-141-59-30
                     </a>
                 </div>
@@ -633,7 +694,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
-  
-   
+
+
+
 </body>
-</html>  
+
+</html>

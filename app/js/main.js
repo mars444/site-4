@@ -1,25 +1,57 @@
+
 $(function(){
 
-  $('.bestsellers__slider').slick({
+  $('.shedules__box__slider').slick({
     nextArrow: '<button type="button" class="slick_button slick-next"><img src="images/next.svg" alt=""></button>' ,
     prevArrow: '<button type="button" class="slick_button slick-prev"><img src="images/back.svg" alt=""></button>' ,
-    slidesToShow: 3,
+    slidesToShow: 6,
     slidesToScroll: 1,
-  });
+    responsive: [
+      {
+        breakpoint: 1300,
+        settings: {
+          slidesToShow: 5,
 
+        }
+      },
+      {
+        breakpoint: 1050,
+        settings: {
+          slidesToShow: 4,
 
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3,
 
-  $('.header__box-user').on('click', function(){
-    $(this).children('.user__items').toggleClass('user__items-active');
-    $(this).children('.angle').toggleClass('angle-active');
-  });
+        }
+      },
+      {
+        breakpoint: 709,
+        settings: {
+          slidesToShow: 2,
 
+        }
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+
+        }
+      },
   
-  $('.mk__slider-main').slick({
-    nextArrow: '<button type="button" class="slick_button slick-next"><img src="images/next.svg" alt=""></button>' ,
-    prevArrow: '<button type="button" class="slick_button slick-prev"><img src="images/back.svg" alt=""></button>' ,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    ]
   });
+
+
+
+ 
+   
+
+
 });
+
       
