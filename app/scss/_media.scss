@@ -53,6 +53,107 @@
         }
     }
 }
+@media screen and (max-width: 1050px) {
+    .shedules__box-time {
+        width: 15%;
+    }
+    .shedules__box__slider {
+        width: 85%;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0px;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 70px 30px 30px 30px;
+        overflow: auto;
+        z-index: 100;
+        transition: left .5s;
+       
+     
+        &::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: #171819;
+            z-index: 2;
+        }
+        &-active {
+          left: 0;
+           
+          
+        }
+        &__list {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            &-item {
+                &-link {
+                    font-size: 30px;
+                    border-bottom: 1px solid white;
+                }
+            }
+        }
+        &-burger-icon {
+            display: block;
+            cursor: pointer;
+            &-close {
+                display: block;
+                position: absolute;
+                top: 70px;
+                right: 25px;
+                fill: white;
+            }
+        }
+    }
+    .home {
+        padding: 100px 0;
+    }
+    .newto {
+        &__inner {
+            justify-content: space-between;
+        }
+        &__right {
+            margin-left: 0px;
+            padding-left: 10px;
+            margin-left: -10px;
+            padding-top: 0px;
+            border-left: 1px solid #909090;
+            max-width: 100%;
+            margin-bottom: 10px;
+            &-days {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding-top: 20px;
+                li {
+                    padding-right: 30px;
+                    padding-bottom: 10px;
+                    & + li {
+                        padding-top: 0px;
+                    }
+                }
+            }
+        }
+        &__left {
+            margin-bottom: 50px;
+            max-width: 100%;
+            padding-right: 50px;
+            margin-top: 50px;
+        }
+    }
+    .contact {
+        &-inner {
+            flex-wrap: wrap;
+        }
+    }
+}
 
 
 @media screen and (max-width: 900px) {
