@@ -1,25 +1,6 @@
 
 
-@media screen and (max-width: 1149px) {
-    .classes {
-        padding: 50px 0;
-        &-title {
-            padding-bottom: 40px;
-        }
-        &__items {
-            flex-wrap: wrap;
-            justify-content: center;
-            transform: translateX(18px);
-        }
-        &__item {
-            margin-bottom: 30px;
-            margin-right: 36px;
-            & + & {
-                margin-left: 0;
-            }
-        }
-    }
-}
+
 
 @media screen and (max-width: 1200px) {
     .about {
@@ -52,65 +33,28 @@
     }
 }
 
-@media screen and (max-width: 1050px) {
-    .shedules__box-time {
-        width: 15%;
-    }
-    .shedules__box__slider {
-        width: 85%;
-    }
-
-    .menu {
-        display: none;
-        &__list {
-            display: none;
+@media screen and (max-width: 1149px) {
+    .classes {
+        padding: 50px 0;
+        &-title {
+            padding-bottom: 40px;
         }
-        &-burger-icon {
-            display: block;
-        }
-    }
-    .home {
-        padding: 100px 0;
-    }
-    .newto {
-        &__inner {
-            justify-content: space-between;
-        }
-        &__right {
-            margin-left: 0px;
-            padding-left: 10px;
-            margin-left: -10px;
-            padding-top: 0px;
-            border-left: 1px solid #909090;
-            max-width: 100%;
-            margin-bottom: 10px;
-            &-days {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                padding-top: 20px;
-                li {
-                    padding-right: 30px;
-                    padding-bottom: 10px;
-                    & + li {
-                        padding-top: 0px;
-                    }
-                }
-            }
-        }
-        &__left {
-            margin-bottom: 50px;
-            max-width: 100%;
-            padding-right: 50px;
-            margin-top: 50px;
-        }
-    }
-    .contact {
-        &-inner {
+        &__items {
             flex-wrap: wrap;
+            justify-content: center;
+            transform: translateX(18px);
+        }
+        &__item {
+            margin-bottom: 30px;
+            margin-right: 36px;
+            & + & {
+                margin-left: 0;
+            }
         }
     }
 }
+
+
 @media screen and (max-width: 900px) {
     
 }
@@ -180,6 +124,10 @@
     }
 }
 @media screen and (max-width: 591px) {
+    
+    .home{
+        margin-top: 0;
+    }
     .newto {
         &__right {
             &-days {
@@ -207,8 +155,19 @@
     }
 }
 @media screen and (max-width: 500px) {
+    .header{
+        svg{
+            height: 20px;
+        }
+    }
+    .header__social-item{
+        & + & {
+            margin-left: 10px;
+        }
+    }
     .header-logo-link {
         font-size: 20px;
+        padding-right: 0;
     }
     .classes {
         .classes {
