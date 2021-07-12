@@ -86,7 +86,7 @@ $(function () {
     $("body").removeClass('lock');
   })
 
-  
+
   function onEntry(entry) {
     entry.forEach(change => {
       if (change.isIntersecting) {
