@@ -123,6 +123,7 @@ body.lock{
 
 //section home start
 .home {
+    height: 80vh;
     margin-top: 60px;
     text-align: center;
     padding: 100px 0;
@@ -656,6 +657,18 @@ body.lock{
     }
 }
 //end footer
+
+//add animation 
+
+.element-animation {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  .element-animation.element-show {
+    opacity: 1;
+    transition: all 1s;
+    transform: translateY(0%);
+  }
 
 
 @import "_media";
