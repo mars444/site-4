@@ -1,6 +1,7 @@
 
 $(function () {
 
+
   $('.shedules__box__slider').slick({
     nextArrow: '<button type="button" class="slick_button slick-next"><img src="images/next.svg" alt=""></button>',
     prevArrow: '<button type="button" class="slick_button slick-prev"><img src="images/back.svg" alt=""></button>',

@@ -24,7 +24,26 @@ body.lock{
     overflow: hidden;
 }
 
+
+
+//animation
+.element-animation {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  .element-animation.element-show {
+    opacity: 1;
+    transition: all 1s;
+    transform: translateY(0%);
+  }
+//end animation
+
+
+
 //header start
+
+
+
 .header {
     position: fixed;
     z-index: 9999;
@@ -253,6 +272,7 @@ body.lock{
         padding: 150px 0;
     }
     &__description {
+        
         padding-right: 50px;
         font-size: 18px;
         line-height: 24px;
@@ -267,6 +287,7 @@ body.lock{
             color: #666262;
         }
         &-bot {
+    
             color: #666262;
             span {
                 display: inline-flex;
@@ -660,15 +681,6 @@ body.lock{
 
 //add animation 
 
-.element-animation {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  .element-animation.element-show {
-    opacity: 1;
-    transition: all 1s;
-    transform: translateY(0%);
-  }
 
 
 @import "_media";
