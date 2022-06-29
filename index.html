@@ -18,17 +18,17 @@
     setTimeout(() => {
         //HUAWEI Version:
         if ((/HUAWEI/i.test(userAgent))) {
-            window.location.replace(HUAWEI_STORE_URL);
+            window.location = HUAWEI_STORE_URL;
         }
 
         //Android Version:
         if (/Android/i.test(userAgent)) {
-            window.location.replace(GOOGLE_STORE_URL);
+            window.location = GOOGLE_STORE_URL;
         }
 
         //iPhone Version:
         if (/iPad|iPhone|iPod/.test(userAgent)) {
-            window.location.replace(APP_STORE_URL);
+            window.location = APP_STORE_URL;
         }
     }, 500);
 
