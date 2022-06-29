@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    const APP_STORE_URL = "https://www.apple.com/ru/app-store/";         // ссылка на приложение в APP_STORE
+    const GOOGLE_STORE_URL = "https://play.google.com/";                 // ссылка на приложение в GOOGLE_STORE
+    const HUAWEI_STORE_URL = "https://appgallery.huawei.com/";           // ссылка на приложение в HUAWEI_STORE
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+
+    setTimeout(() => {
+        //HUAWEI Version:
+        if ((/HUAWEI/i.test(userAgent))) {
+            window.location.replace(HUAWEI_STORE_URL);
+        }
+
+        //Android Version:
+        if (/Android/i.test(userAgent)) {
+            window.location.replace(GOOGLE_STORE_URL);
+        }
+
+        //iPhone Version:
+        if (/iPad|iPhone|iPod/.test(userAgent)) {
+            window.location.replace(APP_STORE_URL);
+        }
+    }, 500);
+
+
+</script>
+</body>
+</html>
